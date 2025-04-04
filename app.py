@@ -67,7 +67,7 @@ def generate_strong_password():
     ]
     
     # Fill the rest randomly
-    for _ in range(8):  # Total length will be 12 characters
+    for _ in range(8): 
         strong_pass.append(random.choice(lowercase + uppercase + digits + special))
     
     random.shuffle(strong_pass)
@@ -116,6 +116,6 @@ if st.button("Generate Strong Password"):
     st.code(strong_password)
     st.success("Here's a strong password for you! Copy it to a safe place.")
 
-# Signature at the Bottom
+
 st.write("\n")
 st.write("Created with ❤️ by **Kanwal Heer**.")
